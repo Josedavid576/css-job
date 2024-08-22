@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Internacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aeropuerto Internacional</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#signup">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="contenido">
+            <h2>Bienvenidos al Aeropuerto Internacional</h2>
+            <p><em>Explora nuestros destinos más populares y planifica tu próxima aventura.</em></p>
+        </div>
+    </section>    
+
+    <section id="destinos">
+        <h2>Destinos Disponibles</h2>
+        <div class="destinos-container">
+            <div class="destino">
+                <h3>Destino 1: Nueva York</h3>
+                <img src="destinos/ny.jpg" alt="Nueva York">
+                <p>Explora la ciudad que nunca duerme.</p>
+                <a href="destinos/ny/newyork.html">Ver más</a>
+            </div>
+            <div class="destino">
+                <h3>Destino 2: Tokio</h3>
+                <img src="destinos/tokio.jpg" alt="Tokio">
+                <p>Sumérgete en la cultura y la tecnología de Tokio.</p>
+                <a href="destinos/tokyo/tokyo.html">Ver más</a>
+            </div>
+            <div class="destino">
+                <h3>Destino 3: París</h3>
+                <img src="destinos/paris.jpg" alt="París">
+                <p>Disfruta del romance y la elegancia de París.</p>
+                <a href="destinos/paris/paris.html">Ver más</a>
+            </div>
+            <div class="destino">
+                <h3>Destino 4: Sídney</h3>
+                <img src="destinos/sidney.jpg" alt="Sídney">
+                <p>Descubre la belleza natural y la vida urbana de Sídney.</p>
+                <a href="destinos/sidney/sidney.html">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-ny">
+        <h3>Información sobre Nueva York</h3>
+        <p>Nueva York, conocida como "La Gran Manzana", es una de las ciudades más icónicas del mundo. Es el hogar de una increíble diversidad cultural, con más de 8 millones de habitantes que hablan más de 800 idiomas. La ciudad se compone de cinco distritos principales: Manhattan, Brooklyn, Queens, El Bronx y Staten Island, cada uno con su propio carácter y encanto.
+
+            Famosa por sus impresionantes rascacielos, Nueva York alberga algunos de los edificios más emblemáticos, como el Empire State Building y el One World Trade Center. Central Park ofrece un oasis verde en medio de la bulliciosa ciudad, mientras que Times Square brilla con luces y pantallas las 24 horas del día. La Estatua de la Libertad, situada en la isla Liberty, es un símbolo de libertad y esperanza para millones de inmigrantes que llegaron a América.</p>
+        <a href="#destinos">Volver a Destinos</a>
+    </section>
+
+    <section id="info-tokio">
+        <h3>Información sobre Tokio</h3>
+        <p>Tokio, la capital de Japón, es una metrópolis vibrante que combina tradición y modernidad. Con más de 14 millones de habitantes, es una de las ciudades más pobladas del mundo. Tokio está formada por 23 distritos especiales, cada uno con su propia identidad, desde la tecnología avanzada de Akihabara hasta los templos históricos de Asakusa.
+
+            La ciudad es famosa por su impresionante arquitectura, desde rascacielos futuristas hasta antiguos santuarios. El cruce de Shibuya es uno de los lugares más icónicos, donde miles de personas cruzan al mismo tiempo en una coreografía urbana. Además, Tokio ofrece una gastronomía mundialmente conocida, con una gran cantidad de restaurantes, desde puestos de ramen hasta restaurantes con estrellas Michelin.</p>
+        <a href="#destinos">Volver a Destinos</a>
+    </section>
+
+    <section id="info-paris">
+        <h3>Información sobre París</h3>
+        <p>París, la capital de Francia, es conocida como "La Ciudad de la Luz" y es uno de los destinos turísticos más famosos del mundo. Con su rica historia, cultura y arte, París atrae a millones de visitantes cada año. La ciudad está dividida en 20 distritos, cada uno con su propio encanto, desde el bohemio Montmartre hasta el elegante Marais.
+
+            El icónico símbolo de París es la Torre Eiffel, pero también alberga otros lugares emblemáticos como la Catedral de Notre-Dame, el Museo del Louvre y los Campos Elíseos. La ciudad es un centro mundial de moda, gastronomía y cultura, con encantadoras cafeterías, panaderías y boutiques en cada esquina. París también es un lugar donde el arte y la literatura florecen, con una vibrante escena cultural que sigue siendo un faro para artistas y creativos de todo el mundo.</p>
+        <a href="#destinos">Volver a Destinos</a>
+    </section>
+
+    <section id="info-sidney">
+        <h3>Información sobre Sídney</h3>
+        <p>Sídney, la ciudad más grande de Australia, es conocida por su icónica Ópera de Sídney y su impresionante puerto. Con más de 5 millones de habitantes, es una ciudad vibrante que mezcla lo moderno con la naturaleza. Sídney ofrece una calidad de vida excepcional con playas como Bondi y Manly, que son populares tanto para locales como para turistas.
+
+            El Puente de la Bahía de Sídney es otro de sus monumentos más reconocidos, conectando el puerto y ofreciendo vistas panorámicas de la ciudad. Además de su belleza natural, Sídney cuenta con una rica escena cultural, con museos, galerías de arte y una diversidad gastronómica. La ciudad también es un importante centro financiero y económico de la región Asia-Pacífico.</p>
+        <a href="#destinos">Volver a Destinos</a>
+    </section>
+
+    <section id="signup">
+        <h2>Regístrate para más información</h2>
+        <form id="registroForm" action="paso2.html" method="GET">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destino">Destino de Interés:</label>
+            <select id="destino" name="destino">
+                <option value="Nueva York">Nueva York</option>
+                <option value="Tokio">Tokio</option>
+                <option value="París">París</option>
+                <option value="Sídney">Sídney</option>
+            </select>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <script>
+        
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const destino = document.getElementById('destino').value;
+
+         
+            window.location.href = `registro.html?nombre=${encodeURIComponent(nombre)}&email=${encodeURIComponent(email)}&destino=${encodeURIComponent(destino)}`;
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Aeropuerto Internacional. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

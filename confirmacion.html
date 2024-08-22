@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Vuelo</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <section id="confirmacion">
+        <h2>Confirmación de Vuelo</h2>
+        <div id="resumen-confirmacion">
+
+        </div>
+        <p>Su vuelo ya fue apartado. ¡Que tenga un feliz y hermoso día!</p>
+    </section>
+
+    <script>
+       
+        const params = new URLSearchParams(window.location.search);
+        const nombre = params.get('nombre');
+        const email = params.get('email');
+        const destino = params.get('destino');
+        const hora = params.get('hora');
+        const boletos = params.get('boletos');
+        const asiento = params.get('asiento');
+
+     
+        document.getElementById('resumen-confirmacion').innerHTML = `
+            <p><strong>Nombre:</strong> ${nombre}</p>
+            <p><strong>Correo Electrónico:</strong> ${email}</p>
+            <p><strong>Destino:</strong> ${destino}</p>
+            <p><strong>Hora de Vuelo:</strong> ${hora}</p>
+            <p><strong>Cantidad de Boletos:</strong> ${boletos}</p>
+            <p><strong>Asiento Seleccionado:</strong> ${asiento}</p>
+        `;
+    </script>
+</body>
+</html>
